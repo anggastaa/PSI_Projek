@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+   <ImageView
+       android:id="@+id/view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@drawable/background"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       tools:ignore="MissingConstraints" />
+
+   <View
+       android:id="@+id/view2"
+       android:layout_width="match_parent"
+       android:layout_height="400dp"
+       android:background="@drawable/bg_menu"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="1.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="1.0" />
+
+   <Button
+       android:id="@+id/button6"
+       android:layout_width="119dp"
+       android:layout_height="69dp"
+       android:backgroundTint="#6379FF"
+       android:text="Minggu"
+       android:textSize="17dp"
+       app:cornerRadius="20dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.972"
+       tools:ignore="MissingConstraints" />
+
+   <Button
+       android:id="@+id/button5"
+       android:layout_width="119dp"
+       android:layout_height="69dp"
+       android:backgroundTint="#6379FF"
+       android:text="Sabtu"
+       android:textSize="17dp"
+       app:cornerRadius="20dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.811"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.827"
+       tools:ignore="MissingConstraints" />
+
+   <Button
+       android:id="@+id/button4"
+       android:layout_width="119dp"
+       android:layout_height="69dp"
+       android:backgroundTint="#6379FF"
+       android:text="Jumat"
+       android:textSize="17dp"
+       app:cornerRadius="20dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.181"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.825"
+       tools:ignore="MissingConstraints" />
+
+   <Button
+       android:id="@+id/button"
+       android:layout_width="119dp"
+       android:layout_height="69dp"
+       android:backgroundTint="#6379FF"
+       android:text="Senin"
+       android:textSize="17dp"
+       app:cornerRadius="20dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.181"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.516"
+       tools:ignore="MissingConstraints" />
+
+   <Button
+       android:id="@+id/button2"
+       android:layout_width="119dp"
+       android:layout_height="69dp"
+       android:backgroundTint="#6379FF"
+       android:text="Rabu"
+       android:textSize="17dp"
+       app:cornerRadius="20dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.181"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.669"
+       tools:ignore="MissingConstraints" />
+
+   <Button
+       android:id="@+id/button3"
+       android:layout_width="119dp"
+       android:layout_height="69dp"
+       android:backgroundTint="#6379FF"
+       android:text="Kamis"
+       android:textSize="17dp"
+       app:cornerRadius="20dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.811"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.667"
+       tools:ignore="MissingConstraints" />
+
+   <Button
+       android:id="@+id/button1"
+       android:layout_width="119dp"
+       android:layout_height="69dp"
+       android:backgroundTint="#6379FF"
+       android:text="Selasa"
+       android:textSize="17dp"
+       app:cornerRadius="20dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.811"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.518"
+       tools:ignore="MissingConstraints" />
+
+   <TextView
+       android:id="@+id/textView3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="RemindMe"
+       android:textColor="@color/white"
+       android:textSize="26dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.062"
+       tools:ignore="MissingConstraints" />
+
+   <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="94dp"
+       android:layout_height="141dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.169"
+       app:srcCompat="@drawable/paimon" />
+
+ \
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
