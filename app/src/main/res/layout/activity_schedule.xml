@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".ui.schedule.ScheduleAcitivity">
+    tools:context=".ui.schedule.ScheduleActivity">
 
     <TextView
         android:id="@+id/tv_remind_me"

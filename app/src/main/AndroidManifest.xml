@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.schedule.ScheduleAcitivity"
+            android:name=".ui.schedule.ScheduleActivity"
             android:exported="true"
             android:label="@string/title_activity_main2"
             android:theme="@style/Theme.TestProjek.NoActionBar" />
@@ -27,6 +27,10 @@
             android:name=".ui.main.MainActivity"
             android:exported="true">
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
