@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.main.MainActivity">
 
 
    <ImageView
@@ -31,7 +31,7 @@
        app:layout_constraintVertical_bias="1.0" />
 
    <Button
-       android:id="@+id/button6"
+       android:id="@+id/btn_sunday"
        android:layout_width="119dp"
        android:layout_height="69dp"
        android:backgroundTint="#6379FF"
@@ -46,7 +46,7 @@
        tools:ignore="MissingConstraints" />
 
    <Button
-       android:id="@+id/button5"
+       android:id="@+id/btn_saturday"
        android:layout_width="119dp"
        android:layout_height="69dp"
        android:backgroundTint="#6379FF"
@@ -62,7 +62,7 @@
        tools:ignore="MissingConstraints" />
 
    <Button
-       android:id="@+id/button4"
+       android:id="@+id/btn_friday"
        android:layout_width="119dp"
        android:layout_height="69dp"
        android:backgroundTint="#6379FF"
@@ -78,7 +78,7 @@
        tools:ignore="MissingConstraints" />
 
    <Button
-       android:id="@+id/button"
+       android:id="@+id/btn_monday"
        android:layout_width="119dp"
        android:layout_height="69dp"
        android:backgroundTint="#6379FF"
@@ -94,7 +94,7 @@
        tools:ignore="MissingConstraints" />
 
    <Button
-       android:id="@+id/button2"
+       android:id="@+id/btn_wednesday"
        android:layout_width="119dp"
        android:layout_height="69dp"
        android:backgroundTint="#6379FF"
@@ -110,7 +110,7 @@
        tools:ignore="MissingConstraints" />
 
    <Button
-       android:id="@+id/button3"
+       android:id="@+id/btn_thursday"
        android:layout_width="119dp"
        android:layout_height="69dp"
        android:backgroundTint="#6379FF"
@@ -126,7 +126,7 @@
        tools:ignore="MissingConstraints" />
 
    <Button
-       android:id="@+id/button1"
+       android:id="@+id/btn_tuesday"
        android:layout_width="119dp"
        android:layout_height="69dp"
        android:backgroundTint="#6379FF"
@@ -142,7 +142,7 @@
        tools:ignore="MissingConstraints" />
 
    <TextView
-       android:id="@+id/textView3"
+       android:id="@+id/tv_remind_me"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:text="RemindMe"
@@ -167,8 +167,5 @@
        app:layout_constraintTop_toTopOf="parent"
        app:layout_constraintVertical_bias="0.169"
        app:srcCompat="@drawable/paimon" />
-
- \
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
