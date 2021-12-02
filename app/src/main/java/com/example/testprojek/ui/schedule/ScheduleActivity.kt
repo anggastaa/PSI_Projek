@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.testprojek.R
 import com.example.testprojek.adapter.ScheduleAdapter
 import com.example.testprojek.databinding.ActivityScheduleBinding
+import com.example.testprojek.model.Schedule
 import com.example.testprojek.util.Day
 
 class ScheduleActivity : AppCompatActivity() {
@@ -27,8 +28,8 @@ class ScheduleActivity : AppCompatActivity() {
 
         scheduleAdapter = ScheduleAdapter(applicationContext, this)
 
-        val day = intent.getSerializableExtra(KEY_OF_SELECTED_DAY)
-        val newScheduleFragment = NewScheduleFragment()
+        val day = intent.getSerializableExtra(KEY_OF_SELECTED_DAY) as Day
+        val newScheduleFragment = NewScheduleFragment.getInstance(day)
 
         viewBinding.rvSchedule.apply {
             adapter = scheduleAdapter
@@ -38,7 +39,10 @@ class ScheduleActivity : AppCompatActivity() {
         viewModel.getAllSchedule(day as Day).observe(this, {
             if (it.isNullOrEmpty()) {
                 viewBinding.tvError.visibility = View.VISIBLE
+                viewBinding.rvSchedule.visibility = View.INVISIBLE
             } else {
+                viewBinding.tvError.visibility = View.INVISIBLE
+                viewBinding.rvSchedule.visibility = View.VISIBLE
                 scheduleAdapter.setAllData(it)
             }
         })
