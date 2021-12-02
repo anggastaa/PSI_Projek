@@ -17,6 +17,6 @@ data class Schedule(
     @ColumnInfo(name = "title")
     val title: String,
 
-    @ColumnInfo(name = "time")
-    val time: String,
+    @ColumnInfo(name = "range")
+    val rangeTime: String
 )
