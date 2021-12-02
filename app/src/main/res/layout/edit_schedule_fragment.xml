@@ -5,8 +5,8 @@
     android:layout_height="match_parent"
     app:layout_constraintCircleRadius="16dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.schedule.NewScheduleFragment">
-    
+    tools:context=".ui.schedule.EditScheduleFragment">
+
     <ImageView
         android:id="@+id/iv_view_open_close"
         android:layout_width="wrap_content"
@@ -52,7 +52,7 @@
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@id/tv_name"
         app:layout_constraintTop_toBottomOf="@id/tv_name"/>
-    
+
     <TextView
         android:id="@+id/tv_range_time"
         android:layout_width="wrap_content"
@@ -81,12 +81,12 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
-        android:id="@+id/btn_add"
+        android:id="@+id/btn_update"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/blue"
-        android:text="Tambahkan"
+        android:text="Perbaharui"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@id/btn_set_time"

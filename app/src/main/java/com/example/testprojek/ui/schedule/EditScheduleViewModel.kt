@@ -8,7 +8,7 @@ import com.example.testprojek.data.ScheduleDatabase
 import com.example.testprojek.model.Schedule
 import kotlinx.coroutines.launch
 
-class NewScheduleViewModel(application: Application) : AndroidViewModel(application) {
+class EditScheduleViewModel(application: Application) : AndroidViewModel(application) {
 
     private val dao: ScheduleDao
 
@@ -17,7 +17,7 @@ class NewScheduleViewModel(application: Application) : AndroidViewModel(applicat
         dao = database.scheduleDao()
     }
 
-    fun insertSchedule(schedule: Schedule) = viewModelScope.launch {
-        dao.insertSchedule(schedule)
+    fun editSchedule(schedule: Schedule) = viewModelScope.launch {
+        dao.updateSchedule(schedule)
     }
 }

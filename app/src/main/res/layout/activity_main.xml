@@ -4,168 +4,133 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".ui.main.MainActivity">
-
-
-   <ImageView
-       android:id="@+id/view"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:background="@drawable/background"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.0"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       tools:ignore="MissingConstraints" />
-
-   <View
-       android:id="@+id/view2"
-       android:layout_width="match_parent"
-       android:layout_height="400dp"
-       android:background="@drawable/bg_menu"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="1.0"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="1.0" />
-
-   <Button
-       android:id="@+id/btn_sunday"
-       android:layout_width="119dp"
-       android:layout_height="69dp"
-       android:backgroundTint="@color/blue"
-       android:text="Minggu"
-       android:textSize="17dp"
-       app:cornerRadius="20dp"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.972"
-       tools:ignore="MissingConstraints" />
-
-   <Button
-       android:id="@+id/btn_saturday"
-       android:layout_width="119dp"
-       android:layout_height="69dp"
-       android:backgroundTint="@color/blue"
-       android:text="Sabtu"
-       android:textSize="17dp"
-       app:cornerRadius="20dp"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.811"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.827"
-       tools:ignore="MissingConstraints" />
-
-   <Button
-       android:id="@+id/btn_friday"
-       android:layout_width="119dp"
-       android:layout_height="69dp"
-       android:backgroundTint="@color/blue"
-       android:text="Jumat"
-       android:textSize="17dp"
-       app:cornerRadius="20dp"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.181"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.825"
-       tools:ignore="MissingConstraints" />
-
-   <Button
-       android:id="@+id/btn_monday"
-       android:layout_width="119dp"
-       android:layout_height="69dp"
-       android:backgroundTint="@color/blue"
-       android:text="Senin"
-       android:textSize="17dp"
-       app:cornerRadius="20dp"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.181"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.516"
-       tools:ignore="MissingConstraints" />
-
-   <Button
-       android:id="@+id/btn_wednesday"
-       android:layout_width="119dp"
-       android:layout_height="69dp"
-       android:backgroundTint="@color/blue"
-       android:text="Rabu"
-       android:textSize="17dp"
-       app:cornerRadius="20dp"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.181"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.669"
-       tools:ignore="MissingConstraints" />
-
-   <Button
-       android:id="@+id/btn_thursday"
-       android:layout_width="119dp"
-       android:layout_height="69dp"
-       android:backgroundTint="@color/blue"
-       android:text="Kamis"
-       android:textSize="17dp"
-       app:cornerRadius="20dp"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.811"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.667"
-       tools:ignore="MissingConstraints" />
-
-   <Button
-       android:id="@+id/btn_tuesday"
-       android:layout_width="119dp"
-       android:layout_height="69dp"
-       android:backgroundTint="@color/blue"
-       android:text="Selasa"
-       android:textSize="17dp"
-       app:cornerRadius="20dp"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.811"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.518"
-       tools:ignore="MissingConstraints" />
 
    <TextView
        android:id="@+id/tv_remind_me"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
+       android:layout_marginTop="48dp"
        android:text="RemindMe"
        android:textColor="@color/white"
        android:textSize="26dp"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.498"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.062"
-       tools:ignore="MissingConstraints" />
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
 
    <ImageView
-       android:id="@+id/imageView"
+       android:id="@+id/iv_paimon"
        android:layout_width="94dp"
        android:layout_height="141dp"
+       android:layout_marginTop="16dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/tv_remind_me"
+       app:srcCompat="@drawable/paimon" />
+
+
+   <View
+       android:id="@+id/view_buttons_holder"
+       android:layout_width="match_parent"
+       android:layout_height="400dp"
+       android:background="@drawable/bg_menu"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"/>
+
+   <Button
+       android:id="@+id/btn_monday"
+       android:layout_width="140dp"
+       android:layout_height="72dp"
+       android:backgroundTint="@color/blue"
+       android:layout_marginStart="50dp"
+       android:layout_marginTop="16dp"
+       android:text="Senin"
+       android:textSize="18sp"
+       app:cornerRadius="20dp"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintVertical_bias="0.169"
-       app:srcCompat="@drawable/paimon" />
+       app:layout_constraintTop_toTopOf="@id/view_buttons_holder" />
+
+   <Button
+       android:id="@+id/btn_tuesday"
+       android:layout_width="140dp"
+       android:layout_height="72dp"
+       android:backgroundTint="@color/blue"
+       android:layout_marginEnd="50dp"
+       android:text="Selasa"
+       android:textSize="18sp"
+       app:cornerRadius="20dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="@id/btn_monday"
+       app:layout_constraintBottom_toBottomOf="@id/btn_monday"/>
+
+   <Button
+       android:id="@+id/btn_wednesday"
+       android:layout_width="140dp"
+       android:layout_height="72dp"
+       android:layout_marginTop="24dp"
+       android:backgroundTint="@color/blue"
+       android:text="Rabu"
+       android:textSize="18sp"
+       app:cornerRadius="20dp"
+       app:layout_constraintStart_toStartOf="@id/btn_monday"
+       app:layout_constraintTop_toBottomOf="@id/btn_monday"
+       app:layout_constraintEnd_toEndOf="@id/btn_monday"
+       tools:ignore="MissingConstraints" />
+
+   <Button
+       android:id="@+id/btn_thursday"
+       android:layout_width="140dp"
+       android:layout_height="72dp"
+       android:backgroundTint="@color/blue"
+       android:text="Kamis"
+       android:textSize="18sp"
+       app:cornerRadius="20dp"
+       app:layout_constraintStart_toStartOf="@id/btn_tuesday"
+       app:layout_constraintEnd_toEndOf="@id/btn_tuesday"
+       app:layout_constraintTop_toTopOf="@id/btn_wednesday"
+       app:layout_constraintBottom_toBottomOf="@id/btn_wednesday"/>
+
+   <Button
+       android:id="@+id/btn_friday"
+       android:layout_width="140dp"
+       android:layout_height="72dp"
+       android:layout_marginTop="24dp"
+       android:backgroundTint="@color/blue"
+       android:text="Jumat"
+       android:textSize="18sp"
+       app:cornerRadius="20dp"
+       app:layout_constraintStart_toStartOf="@id/btn_wednesday"
+       app:layout_constraintTop_toBottomOf="@id/btn_wednesday"
+       app:layout_constraintEnd_toEndOf="@id/btn_wednesday"/>
+
+   <Button
+       android:id="@+id/btn_saturday"
+       android:layout_width="140dp"
+       android:layout_height="72dp"
+       android:backgroundTint="@color/blue"
+       android:text="Sabtu"
+       android:textSize="18sp"
+       app:cornerRadius="20dp"
+       app:layout_constraintStart_toStartOf="@id/btn_thursday"
+       app:layout_constraintTop_toTopOf="@id/btn_friday"
+       app:layout_constraintBottom_toBottomOf="@id/btn_friday"
+       app:layout_constraintEnd_toEndOf="@id/btn_thursday"/>
+
+
+   <Button
+       android:id="@+id/btn_sunday"
+       android:layout_width="140dp"
+       android:layout_height="72dp"
+       android:layout_marginTop="24dp"
+       android:backgroundTint="@color/blue"
+       android:text="Minggu"
+       android:textSize="18sp"
+       app:cornerRadius="20dp"
+       app:layout_constraintStart_toStartOf="@id/btn_friday"
+       app:layout_constraintTop_toBottomOf="@id/btn_friday"
+       app:layout_constraintEnd_toEndOf="@id/btn_saturday"
+       tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
