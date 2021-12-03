@@ -38,7 +38,6 @@ class ScheduleAdapter(
             view.apply {
                 tvTitle.text = schedule.title
                 tvTime.text = schedule.rangeTime
-                val editScheduleFragment = EditScheduleFragment()
 
                 ivDelete.setOnClickListener {
                     CoroutineScope(Dispatchers.Main).launch {
@@ -47,6 +46,7 @@ class ScheduleAdapter(
                 }
 
                 ivEdit.setOnClickListener {
+                    val editScheduleFragment = EditScheduleFragment.getInstance(schedule.id)
                     editScheduleFragment.show(activity.supportFragmentManager, editScheduleFragment::class.java.simpleName)
                 }
             }

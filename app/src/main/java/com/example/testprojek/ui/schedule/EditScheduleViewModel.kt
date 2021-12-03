@@ -2,10 +2,12 @@ package com.example.testprojek.ui.schedule
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.testprojek.data.ScheduleDao
 import com.example.testprojek.data.ScheduleDatabase
 import com.example.testprojek.model.Schedule
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class EditScheduleViewModel(application: Application) : AndroidViewModel(application) {
@@ -20,4 +22,6 @@ class EditScheduleViewModel(application: Application) : AndroidViewModel(applica
     fun editSchedule(schedule: Schedule) = viewModelScope.launch {
         dao.updateSchedule(schedule)
     }
+
+    fun getSelectedSchedule(selectedId: String) = dao.getSelectedSchedule(selectedId).asLiveData(Dispatchers.IO)
 }

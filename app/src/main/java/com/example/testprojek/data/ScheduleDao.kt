@@ -11,6 +11,9 @@ interface ScheduleDao {
     @Query("SELECT * FROM schedule_table WHERE day = :selectedDay")
     fun getAllSchedule(selectedDay: Day): Flow<List<Schedule>>
 
+    @Query("SELECT * FROM schedule_table WHERE id = :selectedId")
+    fun getSelectedSchedule(selectedId: String): Flow<Schedule>
+
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertSchedule(schedule: Schedule)
 

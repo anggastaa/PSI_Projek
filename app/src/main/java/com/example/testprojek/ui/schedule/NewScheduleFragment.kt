@@ -5,6 +5,7 @@ import android.content.DialogInterface
 import android.os.Bundle
 import android.text.TextUtils
 import android.text.format.DateFormat
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -125,7 +126,6 @@ class NewScheduleFragment : BottomSheetDialogFragment() {
                             rangeTime
                         )
                     )
-
                     dismiss()
                 } else {
                     Toast.makeText(activity, "Nama jadwal tidak boleh kosong", Toast.LENGTH_SHORT).show()
@@ -135,6 +135,11 @@ class NewScheduleFragment : BottomSheetDialogFragment() {
     }
 
     override fun onDismiss(dialog: DialogInterface) {
+        onDestroy()
+        super.onDismiss(dialog)
+    }
+
+    override fun onDestroy() {
         binding?.edtName?.text?.clear()
         _binding = null
         startHour = 0
@@ -142,7 +147,30 @@ class NewScheduleFragment : BottomSheetDialogFragment() {
         endHour = 0
         endMinute = 0
         rangeTime = "00.00 - 00.00"
-        super.onDismiss(dialog)
+        super.onDestroy()
+    }
+
+    override fun onResume() {
+       /* binding?.btnAdd?.setOnClickListener {
+            val rangeTime = rangeTime
+
+            if (!TextUtils.isEmpty(binding?.edtName?.text)) {
+                val title = binding?.edtName?.text
+
+                viewModel.insertSchedule(
+                    Schedule(
+                        NanoIdUtils.randomNanoId(),
+                        day!!,
+                        title.toString(),
+                        rangeTime
+                    )
+                )
+                dismiss()
+            } else {
+                Toast.makeText(activity, "Nama jadwal tidak boleh kosong", Toast.LENGTH_SHORT).show()
+            }
+        }*/
+        super.onResume()
     }
 
 }

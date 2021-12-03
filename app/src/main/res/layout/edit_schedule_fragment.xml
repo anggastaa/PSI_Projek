@@ -2,8 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     app:layout_constraintCircleRadius="16dp"
+    android:padding="28dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.schedule.EditScheduleFragment">
 
@@ -11,7 +12,6 @@
         android:id="@+id/iv_view_open_close"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:src="@drawable/ic_view_open_close"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,7 +21,6 @@
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
         android:layout_marginTop="36dp"
         android:fontFamily="@font/roboto"
         android:text="Nama"
@@ -67,31 +66,39 @@
         tools:text="00.00 - 00.00"/>
 
     <Button
-        android:id="@+id/btn_set_time"
-        android:layout_width="0dp"
+        android:id="@+id/btn_set_start_time"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="72dp"
         android:layout_marginTop="56dp"
-        android:backgroundTint="@color/blue"
-        android:text="Atur Waktu"
+        android:text="Atur Waktu Awal"
         android:textAllCaps="false"
-        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_time"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toStartOf="@id/btn_set_end_time"/>
+
+    <Button
+        android:id="@+id/btn_set_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atur Waktu Akhir"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@id/btn_set_start_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_set_start_time"
+        app:layout_constraintBottom_toBottomOf="@id/btn_set_start_time"/>
 
     <Button
         android:id="@+id/btn_update"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:backgroundTint="@color/blue"
         android:text="Perbaharui"
         android:textAllCaps="false"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@id/btn_set_time"
-        app:layout_constraintTop_toBottomOf="@id/btn_set_time"
-        app:layout_constraintEnd_toEndOf="@id/btn_set_time"/>
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="@id/btn_set_start_time"
+        app:layout_constraintTop_toBottomOf="@id/btn_set_start_time"
+        app:layout_constraintEnd_toEndOf="@id/btn_set_end_time"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
