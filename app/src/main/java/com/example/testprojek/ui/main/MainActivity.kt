@@ -1,8 +1,10 @@
 package com.example.testprojek.ui.main
 
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.viewbinding.library.activity.viewBinding
 import com.example.testprojek.R
 import com.example.testprojek.databinding.ActivityMainBinding
@@ -17,6 +19,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+        }
 
         viewBinding.apply {
             val intent = Intent(this@MainActivity, ScheduleActivity::class.java)

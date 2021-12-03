@@ -3,13 +3,10 @@ package com.example.testprojek.ui.schedule
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.asLiveData
-import androidx.lifecycle.viewModelScope
 import com.example.testprojek.data.ScheduleDao
 import com.example.testprojek.data.ScheduleDatabase
-import com.example.testprojek.model.Schedule
 import com.example.testprojek.util.Day
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 
 class ScheduleViewModel(application: Application): AndroidViewModel(application) {
 

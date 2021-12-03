@@ -1,16 +1,15 @@
 package com.example.testprojek.ui.schedule
 
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.view.WindowManager
 import android.viewbinding.library.activity.viewBinding
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.testprojek.R
 import com.example.testprojek.adapter.ScheduleAdapter
 import com.example.testprojek.databinding.ActivityScheduleBinding
-import com.example.testprojek.model.Schedule
 import com.example.testprojek.util.Day
 
 class ScheduleActivity : AppCompatActivity() {
@@ -27,9 +26,10 @@ class ScheduleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_schedule)
 
-        window.setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            //this.window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+            window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+        }
 
         scheduleAdapter = ScheduleAdapter(applicationContext, this)
 

@@ -11,10 +11,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.viewModels
-import com.aventrix.jnanoid.jnanoid.NanoIdUtils
 import com.example.testprojek.databinding.EditScheduleFragmentBinding
 import com.example.testprojek.model.Schedule
-import com.example.testprojek.util.Day
 import com.example.testprojek.util.Format
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import java.util.*
