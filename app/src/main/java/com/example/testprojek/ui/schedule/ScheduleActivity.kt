@@ -41,7 +41,7 @@ class ScheduleActivity : AppCompatActivity() {
             layoutManager = LinearLayoutManager(this@ScheduleActivity, LinearLayoutManager.VERTICAL, false)
         }
 
-        viewModel.getAllSchedule(day as Day).observe(this, {
+        viewModel.getAllSchedule(day).observe(this, {
             if (it.isNullOrEmpty()) {
                 viewBinding.tvError.visibility = View.VISIBLE
                 viewBinding.rvSchedule.visibility = View.INVISIBLE

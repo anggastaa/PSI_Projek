@@ -2,6 +2,7 @@ package com.example.testprojek.ui.schedule
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.testprojek.data.ScheduleDao
 import com.example.testprojek.data.ScheduleDatabase
 import com.example.testprojek.model.Schedule

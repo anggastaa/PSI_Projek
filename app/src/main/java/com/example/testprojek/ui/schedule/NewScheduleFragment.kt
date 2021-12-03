@@ -42,7 +42,6 @@ class NewScheduleFragment : BottomSheetDialogFragment() {
             }
         }
 
-        const val SPINNER_MODE = 1
         const val CLOCK_MODE = 2
     }
 
@@ -147,29 +146,6 @@ class NewScheduleFragment : BottomSheetDialogFragment() {
         endMinute = 0
         rangeTime = "00.00 - 00.00"
         super.onDestroy()
-    }
-
-    override fun onResume() {
-       /* binding?.btnAdd?.setOnClickListener {
-            val rangeTime = rangeTime
-
-            if (!TextUtils.isEmpty(binding?.edtName?.text)) {
-                val title = binding?.edtName?.text
-
-                viewModel.insertSchedule(
-                    Schedule(
-                        NanoIdUtils.randomNanoId(),
-                        day!!,
-                        title.toString(),
-                        rangeTime
-                    )
-                )
-                dismiss()
-            } else {
-                Toast.makeText(activity, "Nama jadwal tidak boleh kosong", Toast.LENGTH_SHORT).show()
-            }
-        }*/
-        super.onResume()
     }
 
 }
