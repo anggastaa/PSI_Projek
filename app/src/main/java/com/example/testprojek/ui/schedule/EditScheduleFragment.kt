@@ -71,6 +71,8 @@ class EditScheduleFragment :BottomSheetDialogFragment() {
             startMinute = schedule.rangeTime.substring(3, 5).toInt()
             endHour = schedule.rangeTime.substring(8, 10).toInt()
             endMinute = schedule.rangeTime.substring(11, 13).toInt()
+            rangeTime = String.format("${Format.timeFormat(startHour, startMinute)} - ${Format.timeFormat(endHour, endMinute)}")
+            binding?.tvRangeTime?.text = rangeTime
 
             binding?.apply {
                 edtName.setText(schedule.title, TextView.BufferType.EDITABLE)
